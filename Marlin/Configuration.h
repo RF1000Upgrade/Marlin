@@ -120,7 +120,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
@@ -741,7 +741,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 308, 308, 5106, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 308, 308, 1276.7, 500 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1126,7 +1126,7 @@
 #define Y_BED_SIZE 240
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -50
+#define X_MIN_POS -5
 #define Y_MIN_POS 5
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE + X_MIN_POS
